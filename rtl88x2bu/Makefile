@@ -24,6 +24,8 @@ include $(INCLUDE_DIR)/kernel.mk
 include $(INCLUDE_DIR)/package.mk
 
 define KernelPackage/rtl88x2bu
+  SECTION:=kernel
+  CATEGORY:=Kernel modules
   SUBMENU:=Wireless Drivers
   TITLE:=Realtek 8812BU/8822BU support
   DEPENDS:=+kmod-cfg80211 +kmod-usb-core +@DRIVER_11AC_SUPPORT
